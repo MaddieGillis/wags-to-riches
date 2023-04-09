@@ -2,7 +2,7 @@
 ![Github License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## <b>Description</b>
-Wags to Riches is the spot to scout for local pets to adopt using a MERN stack!
+Wags to Riches is the spot to scout for local pets up for adoption!  This MERN stack application for adopting cats and dogs is designed to connect potential pet owners with rescue organizations and shelters, allowing them to browse and select pets based on location, breed, age, and other criteria. Users can create accounts, view profiles of available pets, and initiate the adoption process, all while receiving real-time updates and notifications from the platform.
 ## <b>Table of Contents</b>
 * [Installation](#installation)
 
