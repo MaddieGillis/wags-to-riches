@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS Wags2Riches_db;
-
-CREATE DATABASE Wags2Riches_db;
