@@ -13,7 +13,7 @@ const Navbar = () => {
         <img class="mb-5" id="avatar" src={profileImage} alt="wags to riches logo"/>
         </div>
         <NavMenu>
-          <NavLink to="/about" activeStyle>
+          <NavLink to="/home" activeStyle>
             Home
           </NavLink>
           <NavLink to="/favedogs" activeStyle>
