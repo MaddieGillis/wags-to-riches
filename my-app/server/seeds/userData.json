@@ -1,0 +1,46 @@
+[
+    {
+        "username": "msfishie",
+        "email": "fishie@email.com",
+        "avatar": "image.png",
+        "city": "Atlantis",
+        "isAdmin": "False",
+        "password": "12345678"
+    },
+
+    {
+        "username": "mrfox",
+        "email": "fox@email.com",
+        "avatar": "image.png",
+        "city": "Sherwood Forest",
+        "isAdmin": "False",
+        "password": "12345678"
+    },
+
+    {
+        "username": "herrhare",
+        "email": "hare@email.com",
+        "avatar": "image.png",
+        "city": "Zootopia",
+        "isAdmin": "False",
+        "password": "12345678"
+    },
+
+    {
+        "username": "bananabread",
+        "email": "banana@email.com",
+        "avatar": "image.png",
+        "city": "Portland",
+        "isAdmin": "False",
+        "password": "12345678"
+    },
+
+    {
+        "username": "mrbear",
+        "email": "bear@email.com",
+        "avatar": "image.png",
+        "city": "Big Blue House",
+        "isAdmin": "False",
+        "password": "12345678"
+    }
+]
