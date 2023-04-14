@@ -1,53 +1,43 @@
-import React, {useState} from "react";
-import "./App.css";
-import   Home   from "./Pages/Home";
-import  Favpups  from "./Pages/Favpups";
-import  Login from "./Pages/Login";
-import  Signup  from "./Pages/Signup";
-
-
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
-
-
-
-
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home />
-//   },
-//   {
-//     path: "/favpups",
-//     element: <Favpups />
-//   },
-//   {
-//     path: "/signup",
-//     element: <Signup />
-//   },
-//   {
-//     path: "/login",
-//     element: <Login />
-//   },
-
-//   ]);
-
+import React from 'react';
+import './App.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
+import Home from './/Pages';
+import About from './Pages/about';
+import Login from './Pages/Login';
+import Donate from './Pages/donate';
+import Favedogs from './Pages/favedogs';
+import Signup from './Pages/Signup';
 
 
 function App() {
-  const [activeSection, setActiveSection] = useState('about');
-
-  return (
-    <div className="App" color="black">
-      hello
-        {/* <RouterProvider router={router} /> */} 
-        <Home />
-    </div>
-  );
-};
-
-
-
-
+return (
+    <Router>
+    <Navbar />
+    <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/favedogs' element={<Favedogs/>} />
+        <Route path='/signup' element={<Signup/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/donate' element={<Donate/>} />
+    </Routes>
+    </Router>
+);
+}
+  
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
