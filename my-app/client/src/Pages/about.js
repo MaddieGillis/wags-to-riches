@@ -14,7 +14,6 @@ function About() {
         <Card.Text>
           Looking for a new addition to your family?
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
 
       <Card.Img variant="top" id="card1" src={adopt} />
@@ -32,7 +31,6 @@ function About() {
         <Card.Text>
           Looking for a new addition to your family?
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
 
 
