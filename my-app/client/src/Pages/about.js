@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import adopt from '../assets/images/whitedog-adopt.png';
+import adopt from '../assets/images/whitedog-adopt.jpg';
 
 
 function About() {
