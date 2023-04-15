@@ -48,7 +48,7 @@ function Signup() {
   return (
     <section className="container">
       <h2 data-testid="h1tag" className="top-title">
-        Sign Up
+        Sign Up to Start Searching for Dogs!
       </h2>
       <hr></hr>
       <form class="justify-content-center" id="contact-form">
@@ -79,8 +79,8 @@ function Signup() {
         )}
 
         <div class="mt-5 mb-5">
-          <button data-testid="button" class="btn btn-outline-dark" type="submit" onClick={handleSubmit}>
-            Submit
+          <button id="signup-btn" data-testid="button" class="btn btn-outline-dark" type="submit" onClick={handleSubmit}>
+            Sign Up
           </button>
         </div>
       </form>

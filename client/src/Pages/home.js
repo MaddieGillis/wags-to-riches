@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Card, Button, Container } from 'react-bootstrap';
 import adopt from '../assets/images/whitedog-adopt.jpg';
 
 
@@ -37,54 +36,59 @@ function About() {
 
     <>
    
-  
+   <Container id="card-container" style={{  display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <Card style={{ width: '18rem', height: '18rem' }}>
+    
     {/* here below is how the data is mapped onto the page "a" is representing */}
     {animalList.map(a => {
 
     return  <>
+    
     <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
         <Card.Title>{a.name} {a.gender} {a.size} {a.type} {a.age}</Card.Title>
         <p> {a.status} {a.url}</p>
         <Card.Text>
-         
           Looking for a new addition to your family?
         </Card.Text>
       </Card.Body>
     </>
 
     })}
-          <Card.Img variant="top" id="card1" src={adopt} />
+      <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
+      <Card.Title id="card-title">Name of Dog Here?</Card.Title>
+        <Card.Text id="card-text">
           Looking for a new addition to your family?
         </Card.Text>
+        <Button id="adopt-me-btn">Adopt Me!</Button>
       </Card.Body>
 
       <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
+        <Card.Title id="card-title">Name of Dog Here?</Card.Title>
+        <Card.Text id="card-text">
           Looking for a new addition to your family?
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button id="adopt-me-btn">Adopt Me!</Button>
       </Card.Body>
 
       <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
+      <Card.Title id="card-title">Name of Dog Here?</Card.Title>
+        <Card.Text id="card-text">
           Looking for a new addition to your family?
         </Card.Text>
+        <Button id="adopt-me-btn">Adopt Me!</Button>
       </Card.Body>
 
 
-
+     
     </Card>
+    </Container>
+
     </>
-    
+  
   );
 }
 
