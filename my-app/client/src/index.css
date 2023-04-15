@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
 
 * {
@@ -19,8 +20,10 @@ p {
 }
 
 #nav-logo {
-  position: relative;
-  padding-left: 1%;
+  display: inline-flex;
+  width: 100px;
+  height: 150px;
+  border-radius: 300px;
 }
 
 body {
@@ -33,22 +36,41 @@ body {
   background: #F4F1DE;
   font-family: Oswald, sans-serif;
 }
-
-#adopt-dog {
-  max-height: 300px;
-  border-radius: 300px;
-  }
   
 #card1 {
-  max-height: 300px;
+  display: flex;
+  margin-left: 40%;
+  margin-top: 40%;
+  width: 300px;
+  height: 300px;
   border-radius: 300px;
+  box-shadow: 15px 15px 15px #0A9396;
 }
 
+#card-container {
+  padding-top: 8%;
+  justify-content: center;
+  justify-items: center;
+}
 
-#avatar {
-  max-height: 150px;
-  border-radius: 300px;
-  }
+#card-text {
+  display: flex;
+  margin-left: 75%;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+#adopt-me-btn {
+  background: #E07A5F;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 10px 15px;	
+}
+
 
   contact-form {
     width: 40%;

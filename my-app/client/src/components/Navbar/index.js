@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, NavLink, NavMenu } 
     from "./NavbarElements";
 
-    import profileImage from "../.././assets/images/wagstoriches3.png";
+    import logo from "../.././assets/images/logo-crown.png";
     //import 'bootstrap/dist/css/bootstrap.min.css';
   
 const Navbar = () => {
@@ -10,10 +10,10 @@ const Navbar = () => {
     <>
       <Nav>
       <div id="nav-logo">
-        <img class="mb-5" id="avatar" src={profileImage} alt="wags to riches logo"/>
+        <img className="navbar-brand" src={logo} alt="wags to riches logo"/>
         </div>
         <NavMenu>
-          <NavLink to="/home" activeStyle>
+          <NavLink to="/about" activeStyle>
             Home
           </NavLink>
           <NavLink to="/favedogs" activeStyle>
