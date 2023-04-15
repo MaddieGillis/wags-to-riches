@@ -13,20 +13,28 @@ export const Nav = styled.nav`
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
   padding-right: 9%;
+  box-shadow: 2px 2px 8px 8px #3D405B;
+`;
+
+export const Avatar = styled.img`
+  width: 40px;
+  height: 40px;
+  margin-right: auto;
 `;
   
 export const NavLink = styled(Link)`
-  color: #000000;
+  color: #3D405B;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-family: 'Atma', cursive;
+  font-size: 20px;
   text-transform: uppercase;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #f4f1de;
+    color: #e9c46a;
   }
 `;
   
@@ -41,6 +49,7 @@ export const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+    
   }
 `;
   
