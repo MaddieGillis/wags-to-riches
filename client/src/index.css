@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
 
 * {
@@ -39,27 +40,71 @@ body {
   border-radius: 300px;
   }
   
-#card1 {
-  max-height: 300px;
-  border-radius: 300px;
-}
-
-
-#avatar {
-  max-height: 150px;
-  border-radius: 300px;
+  #card1 {
+    display: flex;
+    margin-left: 40%;
+    margin-top: 40%;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    box-shadow: 15px 15px 15px #0A9396;
+  }
+  
+  #card-container {
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hind Madurai', sans-serif;
   }
 
-  contact-form {
-    width: 40%;
+  #card-title {
+    display: flex;
+    padding-top: 8%;
+    margin-left: 75%;
+    font-family: 'Hind Madurai', sans-serif;
   }
 
+  /**/
+  #avatar {
+    max-height: 150px;
+    border-radius: 300px;
+  }
+
+  /*sign up and login container*/
   .container {
     width: 80%;
     max-width: 1200px;
-    margin-left: 5%;
+    margin-left: 8%;
+    padding-top: 5%;
   }
  
+  /*sign up and login entries*/
+  .mt-5 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 80px;
+  }
+
+  #signup-btn {
+    width: 100px;
+    background: #E07A5F;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 10px 15px;	
+  }
 
   button {
     background: #E07A5F;

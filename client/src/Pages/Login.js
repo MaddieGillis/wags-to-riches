@@ -47,7 +47,7 @@ function Login() {
   return (
     <section className="container">
       <h2 data-testid="h1tag" className="top-title">
-        Sign Up
+       Login
       </h2>
       <hr></hr>
       <form class="justify-content-center" id="contact-form">
@@ -67,7 +67,7 @@ function Login() {
 
         <div class="mt-5 mb-5">
           <button data-testid="button" class="btn btn-outline-dark" type="submit" onClick={handleSubmit}>
-            Submit
+            Login
           </button>
         </div>
       </form>
