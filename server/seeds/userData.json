@@ -4,7 +4,7 @@
         "email": "fishie@email.com",
         "avatar": "image.png",
         "city": "Atlantis",
-        "isAdmin": "False",
+        "isAdmin": false,
         "password": "12345678"
     },
 
@@ -13,7 +13,7 @@
         "email": "fox@email.com",
         "avatar": "image.png",
         "city": "Sherwood Forest",
-        "isAdmin": "False",
+        "isAdmin": false,
         "password": "12345678"
     },
 
@@ -22,7 +22,7 @@
         "email": "hare@email.com",
         "avatar": "image.png",
         "city": "Zootopia",
-        "isAdmin": "False",
+        "isAdmin": false,
         "password": "12345678"
     },
 
@@ -31,7 +31,7 @@
         "email": "banana@email.com",
         "avatar": "image.png",
         "city": "Portland",
-        "isAdmin": "False",
+        "isAdmin": false,
         "password": "12345678"
     },
 
@@ -40,7 +40,7 @@
         "email": "bear@email.com",
         "avatar": "image.png",
         "city": "Big Blue House",
-        "isAdmin": "False",
+        "isAdmin": false,
         "password": "12345678"
     }
 ]
