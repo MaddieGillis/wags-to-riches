@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from "react";
-import { Nav, NavLink, NavMenu } from "./NavbarElements";
+import { Nav, NavLink, NavMenu, Avatar } from "./NavbarElements";
 
-import profileImage from "../.././assets/images/wagstoriches3.png";
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import logoImage from "../.././assets/images/crown-logo.png";
+
 
 const Navbar = () => {
   const [user, setUser] = useState(() => JSON.parse(localStorage.getItem("store"))?.user);
@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <div id="nav-logo">
-          <img class="mb-5" id="avatar" src={profileImage} alt="wags to riches logo" />
-        </div>
+      <NavLink to="/home" activeStyle>
+      <Avatar id="navbar-logo" src={logoImage} alt="wags to riches logo" />
+      </NavLink>
         <NavMenu>
           <NavLink to="/home" activeStyle>
             Home

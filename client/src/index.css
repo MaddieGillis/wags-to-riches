@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   box-sizing: border-box;
@@ -19,10 +19,12 @@ p {
   font-size: 30px;
 }
 
-#nav-logo {
-  position: relative;
-  padding-left: 1%;
-}
+  /*logo image*/
+  #avatar {
+    max-height: 250px;
+    border-radius: 300px;
+  }
+
 
 body {
   margin: 0;
@@ -32,7 +34,6 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: #F4F1DE;
-  font-family: Oswald, sans-serif;
 }
 
 #adopt-dog {
@@ -61,7 +62,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    color: #3D405B;
   }
 
   #card-title {
@@ -71,18 +74,24 @@ body {
     font-family: 'Hind Madurai', sans-serif;
   }
 
-  /**/
-  #avatar {
-    max-height: 150px;
-    border-radius: 300px;
-  }
+    #img-container {
+      padding-top: 12%;
+      max-height: 300px;
+      border-radius: 300px;
+    }
 
+    #big-logo {
+      width: fit-content;
+      box-shadow: 2px 2px 8px 8px #3D405B;
+    }
+    
   /*sign up and login container*/
   .container {
     width: 80%;
     max-width: 1200px;
     margin-left: 8%;
     padding-top: 5%;
+    font-family: 'Hind Madurai', sans-serif;
   }
  
   /*sign up and login entries*/
