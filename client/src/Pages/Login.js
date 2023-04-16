@@ -66,8 +66,8 @@ function Login() {
           </div>
         )}
 
-        <div class="mt-5 mb-5">
-          <button data-testid="button" class="btn btn-outline-dark" type="submit" onClick={handleSubmit}>
+          <div class="mt-5 mb-5">
+          <button id="btn" data-testid="button" class="btn btn-outline-dark" type="submit" onClick={handleSubmit}>
             Login
           </button>
         </div>
