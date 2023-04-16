@@ -79,7 +79,7 @@ function Signup() {
         )}
 
         <div class="mt-5 mb-5">
-          <button id="signup-btn" data-testid="button" class="btn btn-outline-dark" type="submit" onClick={handleSubmit}>
+          <button id="btn" data-testid="button" class="btn btn-outline-dark" type="submit" onClick={handleSubmit}>
             Sign Up
           </button>
         </div>

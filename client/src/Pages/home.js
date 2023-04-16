@@ -50,9 +50,10 @@ function About() {
       </Container>
 
 
-   <Container id="card-container" style={{  display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+   <Container id="card-container" style={{  display: 'flex', justifyContent: 'left', alignItems: 'center' }}>
+    Hello world!
     <Card style={{ width: '18rem', height: '18rem' }}>
-    <Row>
+ 
       
 
     {console.log(pets)}
@@ -60,50 +61,21 @@ function About() {
     {loading===true?"still loading":pets.map(a => {
 
     return  <>
-    <Col xs={4}>
-      Hello World!
+   
+   Hello world!
     <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
         <Card.Title>{a.name} {a.gender} {a.size} {a.type} {a.age}</Card.Title>
         <p> {a.status} {a.url}</p>
-        <Card.Text>
-          Looking for a new addition to your family?
-        </Card.Text>
+        <Button id="btn">Adopt Me!</Button>
       </Card.Body>
-      </Col>
+ 
     </>
 
     })}
-     </Row>
-      <Card.Img variant="top" id="card1" src={adopt} />
-      <Card.Body>
-      <Card.Title id="card-title">Name of Dog Here?</Card.Title>
-        <Card.Text id="card-text">
-          Looking for a new addition to your family?
-        </Card.Text>
-        <Button id="adopt-me-btn">Adopt Me!</Button>
-      </Card.Body>
-
-      <Card.Img variant="top" id="card1" src={adopt} />
-      <Card.Body>
-        <Card.Title id="card-title">Return Name of Dog Here?</Card.Title>
-        <Card.Text style={{  display: 'flex', justifyContent: 'center', alignItems: 'center' }} id="card-text">
-          Looking for a new addition to your family?
-        </Card.Text>
-        <Button id="adopt-me-btn">Adopt Me!</Button>
-      </Card.Body>
-
-      <Card.Img variant="top" id="card1" src={adopt} />
-      <Card.Body>
-      <Card.Title id="card-title">Name of Dog Here?</Card.Title>
-        <Card.Text id="card-text">
-          Looking for a new addition to your family?
-        </Card.Text>
-        <Button id="adopt-me-btn">Adopt Me!</Button>
-      </Card.Body>
-
-
      
+
+   
     </Card>
     </Container>
 

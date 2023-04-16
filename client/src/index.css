@@ -43,12 +43,17 @@ body {
   
   #card1 {
     display: flex;
-    margin-left: 40%;
     margin-top: 40%;
-    width: 300px;
-    height: 300px;
+    width: fit-content;
+    height: fit-content;
     border-radius: 300px;
     box-shadow: 15px 15px 15px #0A9396;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px; /* Set the maximum width to your preferred value */
   }
   
   #card-container {
@@ -56,12 +61,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px; /* Set the maximum width to your preferred value */
+  }
+
+  #btn {
+    width: 100px;
+    background: #E07A5F;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 10px 15px;	
+
   }
   
   #card-text {
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
     color:#3D405B;
@@ -90,6 +113,12 @@ body {
       padding-top: 5%;
       width: fit-content;
       height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      max-width: 1200px; /* Set the maximum width to your preferred value */
     }
 
     #big-logo {
@@ -115,27 +144,3 @@ body {
     height: 80px;
   }
 
-  #signup-btn {
-    width: 100px;
-    background: #E07A5F;
-    border: 0;
-    border-radius: 5px;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    padding: 10px 15px;	
-  }
-
-  button {
-    background: #E07A5F;
-    border: 0;
-    border-radius: 5px;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    padding: 10px 15px;	
-  }
