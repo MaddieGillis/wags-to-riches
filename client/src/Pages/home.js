@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Card, Button, Container } from 'react-bootstrap';
 import adopt from '../assets/images/whitedog-adopt.jpg';
 import logo from '../assets/images/dog-crown-logo.png';
-import { Row, Col } from 'react-bootstrap';
 import {GET_PETS} from '../graphql/queries';
 import {useQuery} from '@apollo/client';
 
@@ -40,6 +39,7 @@ function About() {
   return (
 
     <>
+
     <Container id="img-container" style={{  display: 'flex', justifyContent: 'left', alignItems: 'center', paddingLeft: '4%' }}>
      <Card.Img id="big-logo" style={{width: 400, height: 400, borderRadius: 400/ 2}} src={logo} />
       <Card.Body>
@@ -66,7 +66,7 @@ function About() {
     <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
         <Card.Title>{a.name} {a.gender} {a.size} {a.type} {a.age}</Card.Title>
-        <p> {a.status} {a.url}</p>
+        <p> {a.status} {a.imagePath}</p>
         <Button id="btn">Adopt Me!</Button>
       </Card.Body>
  
