@@ -35,6 +35,7 @@ function Login() {
     fetch("http://localhost:3003/login", { body: JSON.stringify(formState), method: "POST", headers: { "Content-type": "application/json" } })
       .then((res) => res.json())
       .then(({ result }) => {
+        console.log(result);
         const { token, user } = result;
         if (!token) {
           throw new Error("Error: login failed");
