@@ -21,7 +21,10 @@
     "graphql": "^16.6.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
-    "node-fetch": "^2.6.9"
+    "node-fetch": "^2.6.9",
+    "apollo-server-express": "^3.6.2",
+    "bcrypt": "^4.0.1",
+    "stripe": "^8.67.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
