@@ -64,7 +64,18 @@ body {
     align-items: center;
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
-    color: #3D405B;
+    color:#3D405B;
+    padding-left: 5%;
+  }
+
+  #logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    color:#E07A5F;
+    padding-left: 5%;
   }
 
   #card-title {
@@ -72,16 +83,18 @@ body {
     padding-top: 8%;
     margin-left: 75%;
     font-family: 'Hind Madurai', sans-serif;
+    color: #3D405B;
   }
 
     #img-container {
-      padding-top: 12%;
-      max-height: 300px;
-      border-radius: 300px;
+      padding-top: 5%;
+      width: fit-content;
+      height: fit-content;
     }
 
     #big-logo {
       width: fit-content;
+      height: fit-content;
       box-shadow: 2px 2px 8px 8px #3D405B;
     }
     
