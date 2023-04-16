@@ -40,17 +40,17 @@ function About() {
   return (
 
     <>
-    <Container id="img-container" style={{  display: 'flex', justifyContent: 'left', alignItems: 'center', paddingLeft: '4%' }}>
-     <Card.Img id="big-logo" style={{width: 400, height: 400, borderRadius: 400/ 2}} src={logo} />
+    <Container id="img-container" style={{  display: 'flex', alignItems: 'center', paddingLeft: '5%' }}>
+     <Card.Img id="big-logo" style={{width: 310, height: 390, borderRadius: 400/ 3}} src={logo} />
       <Card.Body>
-        <Card.Text style={{  display: 'flex', justifyContent: 'left', alignItems: 'center' }}id="logo-text">
+        <Card.Text style={{  display: 'flex', alignItems: 'center', padding: '8%' }}id="logo-text">
           Ready to meet your new best friend?
         </Card.Text>
       </Card.Body>
       </Container>
 
 
-   <Container id="card-container" style={{  display: 'flex', justifyContent: 'left', alignItems: 'center' }}>
+   <Container id="card-container" style={{  display: 'flex', alignItem: 'center' }}>
     Hello world!
     <Card style={{ width: '18rem', height: '18rem' }}>
  
