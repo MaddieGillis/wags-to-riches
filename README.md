@@ -1,7 +1,7 @@
 ### Wags to Riches
 
 ## Description
-React portfolio website that allows you to view information about me, check out my various projects, how to contact me, and the option to download my resume.
+MERN project that allows users to login or signup to start searching adoptable dogs.
 
 ## GitHub URL
 https://github.com/MaddieGillis/wags-to-riches
@@ -18,6 +18,12 @@ https://github.com/MaddieGillis/wags-to-riches
 * [Collaborators](#collaborators)
     
 ## Screenshots
+
+![Screenshot1](https://user-images.githubusercontent.com/115381607/232624141-84a902f0-f227-4427-927d-0105c238db93.png)
+
+![Screenshot2](https://user-images.githubusercontent.com/115381607/232624273-1cb6310f-a9f7-4c8f-96b6-988d0da2365e.png)
+
+![Screenshot 3](https://user-images.githubusercontent.com/115381607/232624299-8d920324-8f09-417f-add6-04ad36c36064.png)
 
 ## Installation
 - Clone the project using the GitHub URL
