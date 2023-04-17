@@ -2,7 +2,9 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://MaddieGillis.github.io/my-wags-to-riches",
   "proxy": "http://localhost:3003/",
+
   "dependencies": {
     "@apollo/client": "^3.7.12",
     "@chakra-ui/react": "^2.5.5",
@@ -14,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.5",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "graphql": "^16.6.0",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
@@ -26,6 +29,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
