@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
-  padding-right: 9%;
+  padding-right: 3%;
   box-shadow: 2px 2px 8px 8px #3D405B;
 `;
 
