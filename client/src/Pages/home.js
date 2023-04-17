@@ -51,7 +51,12 @@ function About() {
       <Card.Body>
         <Card.Text style={{  display: 'flex', alignItems: 'center', padding: '8%' }}id="logo-text">
 
+          <h1>Ready to meet your new best friend? </h1>
+          <h2>Login or Signup to start searching pets!</h2>
+
+
           Ready to meet your new best friend?
+
         </Card.Text>
       </Card.Body>
       </Container>
@@ -86,7 +91,7 @@ function About() {
     })}
      
 
-   
+
     </Card>
     </Container>
 
