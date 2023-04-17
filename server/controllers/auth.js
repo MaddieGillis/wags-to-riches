@@ -6,6 +6,7 @@ const { User } = require("../models");
 const secret = process.env.JWT_SECRET;
 
 const signup = async (req, res) => {
+console.log("test")
   const { username, email, password, passwordConfirmation } = req.body;
 
   try {
