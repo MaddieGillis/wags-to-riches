@@ -43,6 +43,7 @@ function About() {
         <Card.Body>
           <Card.Text style={{ display: 'flex', alignItems: 'center', padding: '8%' }} id="logo-text">
             Ready to meet your new best friend?
+            Login or Signup to start searching!
           </Card.Text>
         </Card.Body>
       </Container>
