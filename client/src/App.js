@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import Donate from './Pages/donate';
 import Favedogs from './Pages/favedogs';
 import Signup from './Pages/Signup';
+import Footer from './components/Footer/Footer';
 import {
     ApolloClient,
     InMemoryCache,
@@ -15,8 +16,9 @@ import {
     createHttpLink,
   } from '@apollo/client';
   import { setContext } from '@apollo/client/link/context';
-//import Footer from './components/Footer/Footer';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 const httpLink = createHttpLink({
     uri: '/graphql',
   });
@@ -47,6 +49,7 @@ return (
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/donate' element={<Donate/>} />
+        <Route path="*" element={<Footer />} />
         
     </Routes>
     </Router>
