@@ -69,19 +69,30 @@ body {
     max-width: 1200px; /* Set the maximum width to your preferred value */
   }
 
+
   #btn {
-    width: 100px;
+    width: 150px;
     background: #E07A5F;
     border: 0;
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
     font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 9px #e07b5f92;
     font-weight: 600;
     margin-bottom: 30px;
-    padding: 10px 15px;	
-
   }
+
+  #btn:hover {background-color: #0A9396}
+
+  #btn:active {
+  background-color: #E07A5F;
+  box-shadow: 0 5px #e07b5f92;
+  transform: translateY(4px);
+}
   
   #card-text {
     display: flex;
