@@ -5,11 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
   max-height: max-content;
-  background: #F4F1DE;
 }
 
 p {
@@ -31,7 +33,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: #e9c46a;
+  background: #F4F1DE;
 }
 
 #adopt-dog {
@@ -75,10 +77,6 @@ body {
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
-    outline: none;
-    padding: 12px 20px;
-    text-align: center;
-    box-shadow: 2px 5px #e07b5f7b;
     font-size: 16px;
     text-align: center;
     border: none;
@@ -86,24 +84,13 @@ body {
     box-shadow: 5px 9px #e07b5f92;
     font-weight: 600;
     margin-bottom: 30px;
-
-
-    padding: 10px 15px;	
-
   }
 
   #btn:hover {background-color: #0A9396}
 
-
   #btn:active {
   background-color: #E07A5F;
   box-shadow: 0 5px #e07b5f92;
-  }
-  
-#btn:active {
-  background-color: #0A9396;
-  box-shadow: 0 5px #e07b5f7b;
-
   transform: translateY(4px);
 }
   
@@ -134,17 +121,27 @@ body {
   }
 
     #img-container {
-      padding-left: 28%;
+      padding-top: 5%;
       width: fit-content;
       height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
       margin: 0 auto;
       max-width: 1200px; /* Set the maximum width to your preferred value */
     }
 
     #big-logo {
-      width: auto;
-      height: auto;
+      width: fit-content;
+      height: fit-content;
       box-shadow: 2px 2px 8px 8px #3D405B;
+    }
+
+    h1, h2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
     
   /*sign up and login container*/
@@ -163,4 +160,3 @@ body {
     width: 300px;
     height: 80px;
   }
-
