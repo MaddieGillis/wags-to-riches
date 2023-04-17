@@ -1,7 +1,10 @@
 // Resolvers define how to fetch the types defined in your schema.
 // This resolver retrieves books from the "books" array above.
 
-const { Pet } = require("../models");
+const { Pet, User } = require("../models");
+const jwt = require("jsonwebtoken");
+// const secret = process.env.JWT_SECRET;
+const secret = "secrets goes here"
 
 /** @type {ApolloServerOptionsWithTypedefs} */
 const resolvers = {
@@ -51,6 +54,7 @@ const resolvers = {
       }
     },
   },
+
   Mutation: {
     addPet: async (parent, { input }) => {
       try {
@@ -68,6 +72,29 @@ const resolvers = {
         return null;
       }
     },
+
+    signup: async (parent, args) => {
+      try {
+        const user = await User.create(args);
+        const token = jwt.sign(
+          {
+            email: user.email,
+            id: user._id,
+          },
+          secret,
+          { expiresIn: "2h" }
+        );
+        return {
+          token,
+          user
+        }
+      }
+      catch (error) {
+        console.error(error);
+
+      }
+    }
+    
   },
 };
 
