@@ -1,21 +1,22 @@
 module.exports = {
   animals: [
+    // Added hard coded dogs id: 62644447 - 62533328
     {
       id: 62644447,
       organization_id: "CA1612",
-      url: "https://www.petfinder.com/dog/arnold-62644447/ca/hawthorne/adoptables-at-spcala-south-bay-pac-ca1612/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/281449/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "German Shepherd Dog",
+        primary: "Red Heeler",
         secondary: null,
         mixed: false,
         unknown: false,
       },
-      colors: { primary: "Brown / Chocolate", secondary: null, tertiary: null },
-      age: "Adult",
+      colors: { primary: "White / Red", secondary: null, tertiary: null },
+      age: "7 Months",
       gender: "Male",
-      size: "Large",
+      size: "Medium",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -26,10 +27,14 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Arnold",
+      name: "Lamont",
       description: null,
       organization_animal_id: "LACA-A-8411",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/Lamont.jpeg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -57,23 +62,23 @@ module.exports = {
     {
       id: 62644448,
       organization_id: "CA1612",
-      url: "https://www.petfinder.com/dog/ralphie-62644448/ca/hawthorne/adoptables-at-spcala-south-bay-pac-ca1612/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/282975/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Terrier",
+        primary: "German Shepherd, Australian Cattledog",
         secondary: null,
         mixed: true,
         unknown: false,
       },
       colors: {
-        primary: "Red / Chestnut / Orange",
-        secondary: "Yellow / Tan / Blond / Fawn",
+        primary: "Merle",
+        secondary: null,
         tertiary: null,
       },
-      age: "Adult",
+      age: "1 year and 4 months",
       gender: "Male",
-      size: "Small",
+      size: "Medium",
       coat: null,
       attributes: {
         spayed_neutered: true,
@@ -84,10 +89,14 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Ralphie",
+      name: "Taki",
       description: null,
       organization_animal_id: "LACA-A-8444",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/Taki.jpeg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -115,23 +124,23 @@ module.exports = {
     {
       id: 62644446,
       organization_id: "AR372",
-      url: "https://www.petfinder.com/dog/freckles-62644446/ar/fort-smith/fort-smith-animal-haven-ar372/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/284439/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Great Pyrenees",
+        primary: "American Pit Bull",
         secondary: null,
         mixed: false,
         unknown: false,
       },
       colors: {
-        primary: "White / Cream",
-        secondary: "Yellow / Tan / Blond / Fawn",
+        primary: "	White / Tan",
+        secondary: null,
         tertiary: null,
       },
-      age: "Adult",
-      gender: "Female",
-      size: "Extra Large",
+      age: "11 Months",
+      gender: "Male",
+      size: "Medium",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -142,10 +151,14 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: ["Heartworm Positive", "Microchipped"],
-      name: "Freckles",
+      name: "Preston Wiggleston ",
       description: null,
       organization_animal_id: "KKFS-A-8070",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/PrestonWiggleston.jpg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -173,23 +186,23 @@ module.exports = {
     {
       id: 62644444,
       organization_id: "FL279",
-      url: "https://www.petfinder.com/dog/harley-62644444/fl/west-palm-beach/peggy-adams-animal-rescue-league-fl279/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/276703/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Mixed Breed",
+        primary: "German Shepherd",
         secondary: null,
         mixed: false,
         unknown: false,
       },
       colors: {
-        primary: "Black",
-        secondary: "Brown / Chocolate",
+        primary: "White / Sable",
+        secondary: null,
         tertiary: null,
       },
-      age: "Baby",
+      age: "3 years and 6 months",
       gender: "Female",
-      size: "Small",
+      size: "Large",
       coat: null,
       attributes: {
         spayed_neutered: true,
@@ -200,10 +213,14 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Harley",
+      name: "Ginger",
       description: null,
       organization_animal_id: "PAAR-A-1538",
-      photos: [],
+      photos: [
+        {
+          full:"../client/src/assets/images/Ginger.jpeg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -231,23 +248,23 @@ module.exports = {
     {
       id: 62644445,
       organization_id: "OK57",
-      url: "https://www.petfinder.com/dog/bear-62644445/ok/tulsa/tulsa-spca-ok57/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/275675/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Mixed Breed",
+        primary: "Labrador, Mix",
         secondary: null,
         mixed: false,
         unknown: false,
       },
       colors: {
-        primary: "Black",
-        secondary: "Yellow / Tan / Blond / Fawn",
+        primary: "Yellow / White",
+        secondary: null,
         tertiary: null,
       },
-      age: "Young",
+      age: "2 years and 2 months ",
       gender: "Male",
-      size: "Medium",
+      size: "Large",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -258,11 +275,15 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Bear",
+      name: "Gunther",
       description:
         "Want to get more exercise? Action is my middle name. My \u0026amp;#34;Let\u0026amp;#39;s GO!\u0026amp;#34; lifestyle will keep you motivated to get...",
       organization_animal_id: "TUL-A-4698",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/Gunther.jpeg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -290,19 +311,19 @@ module.exports = {
     {
       id: 62644436,
       organization_id: "CA2809",
-      url: "https://www.petfinder.com/dog/cliff-62644436/ca/sacramento/fosters-and-paws-ca2809/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/279339/ ",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Chihuahua",
-        secondary: "Terrier",
+        primary: "American Pit Bull",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: "Black", secondary: null, tertiary: null },
-      age: "Baby",
+      colors: { primary: "White / Brown Brindle", secondary: null, tertiary: null },
+      age: "8 years and 4 months",
       gender: "Male",
-      size: "Small",
+      size: "Large",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -313,11 +334,15 @@ module.exports = {
       },
       environment: { children: true, dogs: true, cats: null },
       tags: ["Crate Trained", "Good with Dogs", "Good with kids"],
-      name: "Cliff",
+      name: "King",
       description:
         "Hello and thank you for your interest in this adorable puppy. Although this puppy isn\u0026amp;#39;t old enough to be adopted...",
       organization_animal_id: "FPA-A-1552",
-      photos: [],
+      photos: [
+        {
+          full:"../client/src/assets/images/King.jpg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -345,19 +370,19 @@ module.exports = {
     {
       id: 62644437,
       organization_id: "CA2809",
-      url: "https://www.petfinder.com/dog/sam-62644437/ca/sacramento/fosters-and-paws-ca2809/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/281665/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Chihuahua",
-        secondary: "Terrier",
+        primary: "Retriever, Mix",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: "Black", secondary: null, tertiary: null },
-      age: "Baby",
+      colors: { primary: "White / Tan", secondary: null, tertiary: null },
+      age: "1 years and 3 months",
       gender: "Male",
-      size: "Small",
+      size: "Medium",
       coat: null,
       attributes: {
         spayed_neutered: true,
@@ -368,11 +393,15 @@ module.exports = {
       },
       environment: { children: true, dogs: true, cats: null },
       tags: ["Crate Trained", "Good with Dogs", "Good with kids"],
-      name: "Sam",
+      name: "Daniel Buttercup Jr.",
       description:
         "Hello and thank you for your interest in this adorable puppy. Although this puppy isn\u0026amp;#39;t old enough to be adopted...",
       organization_animal_id: "FPA-A-1548",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/DanielButterCupJr.jpeg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -400,19 +429,19 @@ module.exports = {
     {
       id: 62644438,
       organization_id: "CA2809",
-      url: "https://www.petfinder.com/dog/woody-62644438/ca/sacramento/fosters-and-paws-ca2809/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/282059/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Chihuahua",
-        secondary: "Terrier",
+        primary: "American Pit Bull",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: "Black", secondary: null, tertiary: null },
-      age: "Baby",
+      colors: { primary: "White / Brown", secondary: null, tertiary: null },
+      age: "1 years and 3 months",
       gender: "Male",
-      size: "Small",
+      size: "Medium",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -423,11 +452,15 @@ module.exports = {
       },
       environment: { children: true, dogs: true, cats: null },
       tags: ["Crate Trained", "Good with Dogs", "Good with kids"],
-      name: "Woody",
+      name: "Rueben",
       description:
         "Hello and thank you for your interest in this adorable puppy. Although this puppy isn\u0026amp;#39;t old enough to be adopted...",
       organization_animal_id: "FPA-A-1553",
-      photos: [],
+      photos: [
+        {
+          full:"../client/src/assets/images/Rueben.jpg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -455,19 +488,19 @@ module.exports = {
     {
       id: 62644439,
       organization_id: "CA2809",
-      url: "https://www.petfinder.com/dog/norm-62644439/ca/sacramento/fosters-and-paws-ca2809/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/284511/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Chihuahua",
-        secondary: "Terrier",
+        primary: "Siberian Husky",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: "Black", secondary: null, tertiary: null },
-      age: "Baby",
+      colors: { primary: "Tan / Black", secondary: null, tertiary: null },
+      age: "4 months",
       gender: "Male",
-      size: "Small",
+      size: "Medium",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -478,11 +511,15 @@ module.exports = {
       },
       environment: { children: true, dogs: true, cats: null },
       tags: ["Crate Trained", "Good with Dogs", "Good with kids"],
-      name: "Norm",
+      name: "Dante",
       description:
         "Hello and thank you for your interest in this adorable puppy. Although this puppy isn\u0026amp;#39;t old enough to be adopted...",
       organization_animal_id: "FPA-A-1551",
-      photos: [],
+      photos: [
+        {
+          full: "client/src/assets/images/Dante.jpg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -510,19 +547,19 @@ module.exports = {
     {
       id: 62644440,
       organization_id: "CA2809",
-      url: "https://www.petfinder.com/dog/coach-62644440/ca/sacramento/fosters-and-paws-ca2809/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/284279/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Chihuahua",
-        secondary: "Terrier",
+        primary: "Rottweiler",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: "Black", secondary: null, tertiary: null },
-      age: "Baby",
+      colors: { primary: "Red / Black", secondary: null, tertiary: null },
+      age: "1 years and 6 months",
       gender: "Male",
-      size: "Small",
+      size: "Large",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -533,11 +570,15 @@ module.exports = {
       },
       environment: { children: true, dogs: true, cats: null },
       tags: ["Crate Trained", "Good with Dogs", "Good with kids"],
-      name: "Coach",
+      name: "Sir Maximus Prime",
       description:
         "Hello and thank you for your interest in this adorable puppy. Although this puppy isn\u0026amp;#39;t old enough to be adopted...",
       organization_animal_id: "FPA-A-1550",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/SirMaximusPrime.jpeg",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -565,19 +606,19 @@ module.exports = {
     {
       id: 62644441,
       organization_id: "CA2809",
-      url: "https://www.petfinder.com/dog/diane-62644441/ca/sacramento/fosters-and-paws-ca2809/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/283871/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Chihuahua",
-        secondary: "Terrier",
+        primary: "American Pit Bull",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: "Black", secondary: null, tertiary: null },
-      age: "Baby",
-      gender: "Female",
-      size: "Small",
+      colors: { primary: "White / Tan", secondary: null, tertiary: null },
+      age: "2 years and 1 months",
+      gender: "Male",
+      size: "Medium",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -588,11 +629,15 @@ module.exports = {
       },
       environment: { children: true, dogs: true, cats: null },
       tags: ["Crate Trained", "Good with Dogs", "Good with kids"],
-      name: "Diane",
+      name: "Filo",
       description:
         "Hello and thank you for your interest in this adorable puppy. Although this puppy isn\u0026amp;#39;t old enough to be adopted...",
       organization_animal_id: "FPA-A-1549",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/Filo.png",
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -620,24 +665,24 @@ module.exports = {
     {
       id: 62644434,
       organization_id: "SC572",
-      url: "https://www.petfinder.com/dog/marvel-62644434/nj/berkeley-heights/almost-home-wellness-center-sc572/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/283468/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Labrador Retriever",
-        secondary: "Mixed Breed",
+        primary: "Labrador, Mix",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
       colors: {
-        primary: "Tricolor (Brown, Black, \u0026 White)",
+        primary: "White / Black",
         secondary: null,
         tertiary: null,
       },
-      age: "Baby",
-      gender: "Female",
-      size: "Medium",
-      coat: "Short",
+      age: "5 years and 2 months",
+      gender: "Male",
+      size: "Large",
+      coat: null,
       attributes: {
         spayed_neutered: true,
         house_trained: false,
@@ -647,30 +692,15 @@ module.exports = {
       },
       environment: { children: true, dogs: true, cats: null },
       tags: [],
-      name: "Marvel",
+      name: "Artemis",
       description:
         "Marvel is spaye, up-to-date on age-appropriate vaccinations, and microchipped.\n\n**Please note: completing an \u0026quot;adoption inquiry\u0026quot; via Adopt-a-pet/Petfinder does not constitute...",
       organization_animal_id: null,
       photos: [
         {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896",
+          full: "../client/src/assets/images/Artemis.jpg",
         },
       ],
-      primary_photo_cropped: {
-        small:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896\u0026width=300",
-        medium:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896\u0026width=450",
-        large:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896\u0026width=600",
-        full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644434/1/?bust=1681494896",
-      },
       videos: [],
       status: "adoptable",
       status_changed_at: "2023-04-14T17:54:58+0000",
@@ -697,15 +727,15 @@ module.exports = {
     {
       id: 62644433,
       organization_id: "WI04",
-      url: "https://www.petfinder.com/small-furry/alina-62644433/wi/onalaska/coulee-region-humane-society-inc-wi04/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
-      type: "Small \u0026 Furry",
-      species: "Rat",
-      breeds: { primary: "Rat", secondary: null, mixed: false, unknown: false },
-      colors: { primary: "White", secondary: null, tertiary: null },
-      age: "Adult",
-      gender: "Female",
-      size: "Small",
-      coat: "Short",
+      url: "https://www.oregonhumane.org/adopt/details/285405/",
+      type: "Dog",
+      species: "Dog",
+      breeds: { primary: "Rottweiler", secondary: null, mixed: false, unknown: false },
+      colors: { primary: "Tan / Black", secondary: null, tertiary: null },
+      age: "8 months",
+      gender: "Male",
+      size: "Medium",
+      coat: "null",
       attributes: {
         spayed_neutered: false,
         house_trained: true,
@@ -715,75 +745,15 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: ["Friendly", "Affectionate", "Gentle"],
-      name: "Alina",
+      name: "Dutch",
       description:
         "Meet Alina, our lovely female rat, a young adult who is ready to find her forever home! She is a...",
       organization_animal_id: null,
       photos: [
         {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/2/?bust=1681494887\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/2/?bust=1681494887\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/2/?bust=1681494887\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/2/?bust=1681494887",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/3/?bust=1681494888\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/3/?bust=1681494888\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/3/?bust=1681494888\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/3/?bust=1681494888",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/4/?bust=1681494888\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/4/?bust=1681494888\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/4/?bust=1681494888\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/4/?bust=1681494888",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/5/?bust=1681494889\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/5/?bust=1681494889\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/5/?bust=1681494889\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/5/?bust=1681494889",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/6/?bust=1681494890\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/6/?bust=1681494890\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/6/?bust=1681494890\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/6/?bust=1681494890",
+          full: "../client/src/assets/images/Dutch.jpg"
         },
       ],
-      primary_photo_cropped: {
-        small:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887\u0026width=300",
-        medium:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887\u0026width=450",
-        large:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887\u0026width=600",
-        full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644433/1/?bust=1681494887",
-      },
       videos: [],
       status: "adoptable",
       status_changed_at: "2023-04-14T17:54:52+0000",
@@ -810,17 +780,17 @@ module.exports = {
     {
       id: 62644432,
       organization_id: "AL138",
-      url: "https://www.petfinder.com/dog/budweiser-62644432/al/athens/athens-limestone-animal-shelter-al138/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/285438/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Labrador Retriever",
+        primary: "Shepherd",
         secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: null, secondary: null, tertiary: null },
-      age: "Adult",
+      colors: { primary: "Brown / Black", secondary: null, tertiary: null },
+      age: "5 months",
       gender: "Male",
       size: "Medium",
       coat: null,
@@ -833,11 +803,13 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Budweiser",
+      name: "Peppermint",
       description:
         "Budweiser is a handsome black lab mix. He was turned in by no fault of his own to our shelter....",
       organization_animal_id: "19183502-2023-26835K",
-      photos: [],
+      photos: [{
+        full:"../client/src/assets/images/Peppermint.jpg"
+      }],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -865,17 +837,17 @@ module.exports = {
     {
       id: 62644429,
       organization_id: "NY12",
-      url: "https://www.petfinder.com/cat/perdi-62644429/ny/new-york/animal-care-centers-of-nyc-manhattan-ny12/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
-      type: "Cat",
-      species: "Cat",
+      url: "https://www.oregonhumane.org/adopt/details/283898/",
+      type: "Dog",
+      species: "Dog",
       breeds: {
-        primary: "Domestic Short Hair",
+        primary: "Shepherd",
         secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: null, secondary: null, tertiary: null },
-      age: "Adult",
+      colors: { primary: "White / Seal", secondary: null, tertiary: null },
+      age: "9 months",
       gender: "Female",
       size: "Medium",
       coat: null,
@@ -888,11 +860,15 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Perdi",
+      name: "Bailey",
       description:
         "What my friends at ACC say about me:\nI can go home today!\nI am finding the shelter a little...",
       organization_animal_id: "165841",
-      photos: [],
+      photos: [
+        {
+        full: "../client/src/assets/images/Bailey.jpg"
+        }
+     ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -920,19 +896,19 @@ module.exports = {
     {
       id: 62644430,
       organization_id: "NY12",
-      url: "https://www.petfinder.com/cat/gatsby-62644430/ny/new-york/animal-care-centers-of-nyc-manhattan-ny12/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
-      type: "Cat",
-      species: "Cat",
+      url: "https://www.oregonhumane.org/adopt/details/285419/",
+      type: "Dog",
+      species: "Dog",
       breeds: {
-        primary: "Domestic Medium Hair",
+        primary: "German Shepherd, Labrador",
         secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: null, secondary: null, tertiary: null },
-      age: "Adult",
-      gender: "Female",
-      size: "Medium",
+      colors: { primary: "White / Brindle", secondary: null, tertiary: null },
+      age: "8 years",
+      gender: "Male",
+      size: "Large",
       coat: null,
       attributes: {
         spayed_neutered: false,
@@ -943,11 +919,15 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Gatsby",
+      name: "Gaston",
       description:
         "What my friends at ACC say about me:\nMy history is a mystery and my friends here do not know...",
       organization_animal_id: "168736",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/Gaston.jpg"
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -975,17 +955,17 @@ module.exports = {
     {
       id: 62644431,
       organization_id: "NY12",
-      url: "https://www.petfinder.com/cat/galaxy-62644431/ny/new-york/animal-care-centers-of-nyc-manhattan-ny12/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
-      type: "Cat",
-      species: "Cat",
+      url: "https://www.oregonhumane.org/adopt/details/285437/",
+      type: "Dog",
+      species: "Dog",
       breeds: {
-        primary: "Domestic Short Hair",
+        primary: "Shepherd",
         secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: null, secondary: null, tertiary: null },
-      age: "Young",
+      colors: { primary: "Brown / Black", secondary: null, tertiary: null },
+      age: "1 years",
       gender: "Female",
       size: "Medium",
       coat: null,
@@ -998,11 +978,15 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Galaxy",
+      name: "Mrs. Brisby",
       description:
         "What my friends at ACC say about me:\nMy history is a mystery and my friends here do not know...",
       organization_animal_id: "168755",
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/MrsBrisby.jpg"
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -1031,19 +1015,19 @@ module.exports = {
       id: 62644426,
       organization_id: "MS134",
       url: "https://www.petfinder.com/cat/mabel-62644426/ms/west-point/west-point-clay-county-animal-shelter-ms134/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
-      type: "Cat",
-      species: "Cat",
+      type: "Dog",
+      species: "Dog",
       breeds: {
-        primary: "Domestic Medium Hair",
+        primary: "Terrier",
         secondary: null,
         mixed: true,
         unknown: false,
       },
-      colors: { primary: "Black", secondary: null, tertiary: null },
-      age: "Young",
-      gender: "Female",
-      size: "Medium",
-      coat: "Medium",
+      colors: { primary: "Tri Color", secondary: null, tertiary: null },
+      age: "2 years",
+      gender: "Male",
+      size: "Small",
+      coat: null,
       attributes: {
         spayed_neutered: false,
         house_trained: false,
@@ -1053,10 +1037,14 @@ module.exports = {
       },
       environment: { children: null, dogs: null, cats: null },
       tags: [],
-      name: "Mabel",
+      name: "Scrat The Squirrel",
       description: null,
       organization_animal_id: null,
-      photos: [],
+      photos: [
+        {
+          full: "../client/src/assets/images/ScratTheSquirrel.jpg"
+        }
+      ],
       primary_photo_cropped: null,
       videos: [],
       status: "adoptable",
@@ -1084,20 +1072,20 @@ module.exports = {
     {
       id: 62644425,
       organization_id: "TX2603",
-      url: "https://www.petfinder.com/dog/samantha-62644425/tx/fort-worth/special-treasures-animal-rescue-tx2603/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/281973/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Chihuahua",
+        primary: "German Shepherd, Siberian Husky",
         secondary: null,
         mixed: false,
         unknown: false,
       },
-      colors: { primary: "Golden", secondary: null, tertiary: null },
-      age: "Adult",
-      gender: "Female",
-      size: "Small",
-      coat: "Short",
+      colors: { primary: "White / Tan", secondary: null, tertiary: null },
+      age: "2 years and 3 months",
+      gender: "Male",
+      size: "Large",
+      coat: null,
       attributes: {
         spayed_neutered: true,
         house_trained: true,
@@ -1114,29 +1102,16 @@ module.exports = {
         "Quiet",
         "Couch potato",
       ],
-      name: "Samantha",
+      name: "Grandpa",
       description:
         "Meet Samantha, the six-pound Chihuahua with a heart of gold! Samantha is a gentle and affectionate little girl who loves...",
       organization_animal_id: null,
       photos: [
         {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863",
+          full: "../client/src/assets/images/Grandpa.jpg",
         },
       ],
       primary_photo_cropped: {
-        small:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863\u0026width=300",
-        medium:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863\u0026width=450",
-        large:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863\u0026width=600",
-        full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62644425/1/?bust=1681494863",
       },
       videos: [],
       status: "adoptable",
@@ -1164,24 +1139,24 @@ module.exports = {
     {
       id: 62533328,
       organization_id: "SC574",
-      url: "https://www.petfinder.com/dog/sarge-62533328/nc/wendell/arcadia-animal-rescue-sc574/?referrer_id=53a34e66-34a5-403b-8f2a-f56735e9b210",
+      url: "https://www.oregonhumane.org/adopt/details/280738/",
       type: "Dog",
       species: "Dog",
       breeds: {
-        primary: "Black Mouth Cur",
-        secondary: "Shepherd",
+        primary: "Chihuahua, Terrier",
+        secondary: null,
         mixed: true,
         unknown: false,
       },
       colors: {
-        primary: "Tricolor (Brown, Black, \u0026 White)",
+        primary: "Tan",
         secondary: null,
         tertiary: null,
       },
-      age: "Senior",
+      age: "3 years and 4 months",
       gender: "Male",
-      size: "Large",
-      coat: "Medium",
+      size: "Small",
+      coat: null,
       attributes: {
         spayed_neutered: true,
         house_trained: true,
@@ -1200,74 +1175,16 @@ module.exports = {
         "Loyal",
         "Loves kisses",
       ],
-      name: "Sarge ",
+      name: "Marlon Brando",
       description:
         "Sarge is an apx 8 y/o gentle giant who did not get the greatest start in life, having been abused...",
       organization_animal_id: null,
       photos: [
         {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/2/?bust=1681487338\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/2/?bust=1681487338\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/2/?bust=1681487338\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/2/?bust=1681487338",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/3/?bust=1681487338\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/3/?bust=1681487338\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/3/?bust=1681487338\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/3/?bust=1681487338",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/4/?bust=1681487339\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/4/?bust=1681487339\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/4/?bust=1681487339\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/4/?bust=1681487339",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/5/?bust=1681487339\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/5/?bust=1681487339\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/5/?bust=1681487339\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/5/?bust=1681487339",
-        },
-        {
-          small:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/6/?bust=1681487340\u0026width=100",
-          medium:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/6/?bust=1681487340\u0026width=300",
-          large:
-            "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/6/?bust=1681487340\u0026width=600",
-          full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/6/?bust=1681487340",
+          full: "../client/src/assets/images/MarlonBrando.jpeg",
         },
       ],
       primary_photo_cropped: {
-        small:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875\u0026width=300",
-        medium:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875\u0026width=450",
-        large:
-          "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875\u0026width=600",
-        full: "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62533328/1/?bust=1681316875",
       },
       videos: [],
       status: "adoptable",
