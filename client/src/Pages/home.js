@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Card, Button, Container } from 'react-bootstrap';
 import adopt from '../assets/images/whitedog-adopt.jpg';
 import logo from '../assets/images/dog-crown-logo.png';
-import { Row, Col } from 'react-bootstrap';
 import {GET_PETS} from '../graphql/queries';
 import {useQuery} from '@apollo/client';
 
@@ -40,19 +39,31 @@ function About() {
   return (
 
     <>
+
+
+    <Container id="img-container" style={{ display: 'flex'}}>
+     <Card.Img id="big-logo" style={{ width: 400, height: 400, borderRadius: 400/2 }} src={logo}  />
+      <Card.Body>
+        <Card.Text style={{ display: 'flex' }}id="logo-text">
+
     <Container id="img-container" style={{  display: 'flex', alignItems: 'center', paddingLeft: '5%' }}>
      <Card.Img id="big-logo" style={{width: 310, height: 390, borderRadius: 400/ 3}} src={logo} />
       <Card.Body>
         <Card.Text style={{  display: 'flex', alignItems: 'center', padding: '8%' }}id="logo-text">
+
           Ready to meet your new best friend?
         </Card.Text>
       </Card.Body>
       </Container>
 
 
+
+   <Container id="card-container" style={{ display: 'flex' }}>
+
    <Container id="card-container" style={{  display: 'flex', alignItem: 'center' }}>
+
     Hello world!
-    <Card style={{ width: '18rem', height: '18rem' }}>
+    <Card>
  
       
 
@@ -65,8 +76,8 @@ function About() {
    Hello world!
     <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
-        <Card.Title>{a.name} {a.gender} {a.size} {a.type} {a.age}</Card.Title>
-        <p> {a.status} {a.url}</p>
+        <Card.Title style={{ display: 'flex', alignItems: 'center' }}>{a.name} {a.gender} {a.size} {a.type} {a.age}</Card.Title>
+        <p> {a.status} {a.imagePath}</p>
         <Button id="btn">Adopt Me!</Button>
       </Card.Body>
  
