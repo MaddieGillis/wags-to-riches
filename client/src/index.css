@@ -64,6 +64,13 @@ body {
     max-width: 1400px; /* Set the maximum width to your preferred value */
   }
 
+  #card-body {
+    margin-top: 6%;
+    background-color: #0a9496ad;
+    border-radius: 8px;
+    border-color: #E07A5F;
+  }
+
 
   #btn {
     width: 150px;

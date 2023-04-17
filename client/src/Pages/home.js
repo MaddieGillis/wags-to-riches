@@ -58,7 +58,7 @@ function About() {
               <>
               <Card className="m-2 p-4">
                 <Card.Img variant="top" id="card1" src={adopt} />
-                <Card.Body>
+                <Card.Body id="card-body">
                   <Card.Title style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{a.name} {a.gender} {a.size} {a.type} {a.age} <p> {a.status} {a.imagePath}</p>
                   <Button id="btn" className="mt-3">Adopt Me!</Button>
                   </Card.Title>
