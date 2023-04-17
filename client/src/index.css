@@ -98,7 +98,8 @@ body {
   #btn:active {
   background-color: #E07A5F;
   box-shadow: 0 5px #e07b5f92;
-
+  }
+  
 #btn:active {
   background-color: #0A9396;
   box-shadow: 0 5px #e07b5f7b;
