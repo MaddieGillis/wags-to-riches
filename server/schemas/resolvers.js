@@ -91,27 +91,33 @@ const resolvers = {
   
     },
 
-    signup: async (parent, args) => {
-      try {
-        const user = await User.create(args);
-        const token = jwt.sign(
-          {
-            email: user.email,
-            id: user._id,
-          },
-          secret,
-          { expiresIn: "2h" }
-        );
-        return {
-          token,
-          user
-        }
-      }
-      catch (error) {
-        console.error(error);
+    // signup: async (parent, args) => {
+    //   try {
+    //     const user = await User.create(args);
+    //     const token = jwt.sign(
+    //       {
+    //         email: user.email,
+    //         id: user._id,
+    //       },
+    //       secret,
+    //       { expiresIn: "2h" }
+    //     );
+    //     return {
+    //       token,
+    //       user
+    //     }
+    //   }
+    //   catch (error) {
+    //     console.error(error);
 
-      }
-    }
+    //   }
+    // }
+
+    addUser: async (parent, args) => {
+      const user = await User.create(args);
+      const token = signToken(user);
+      return { token, user };
+    },
     
   },
 };
