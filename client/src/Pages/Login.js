@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
+import { useMutation } from "@apollo/client";
+import Auth from "../utils/Auth"
+import { LOGIN_USER } from "../graphql/mutations";
 
 function Login() {
   const [formState, setFormState] = useState({ emailUsername: "", password: "" });
@@ -7,6 +10,8 @@ function Login() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const { emailUsername, password } = formState;
+
+  const [login, { error }] = useMutation(LOGIN_USER);
 
   function handleChange(e) {
     if (e.target.name === "email") {
@@ -30,20 +35,50 @@ function Login() {
     }
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    fetch("http://localhost:3003/login", { body: JSON.stringify(formState), method: "POST", headers: { "Content-type": "application/json" } })
-      .then((res) => res.json())
-      .then(({ result }) => {
-        console.log(result);
-        const { token, user } = result;
-        if (!token) {
-          throw new Error("Error: login failed");
-        }
+  // function handleSubmit(e) {
+    
+  // //   e.preventDefault();
+  // //   fetch("http://localhost:3003/login", { body: JSON.stringify(formState), method: "POST", headers: { "Content-type": "application/json", "Access-Control-Allow-Origin": "*"
+  // // } })
+  // //     .then((res) => res.json())
+  // //     .then(({ result }) => {
+  // //       console.log(result);
+  // //       const { token, user } = result;
+  // //       if (!token) {
+  // //         throw new Error("Error: login failed");
+  // //       }
 
-        localStorage.setItem("store", JSON.stringify({ appVersion: "1.0", user, token }));
+  // //       localStorage.setItem("store", JSON.stringify({ appVersion: "1.0", user, token }));
+  // //     });
+  // }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    // check if form has everything (as per react-bootstrap docs)
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    try {
+      const { data } = await login({
+        variables: { ...formState }
       });
-  }
+
+      Auth.login(data.login.token);
+
+    } catch (err) {
+      console.error(err);
+    }
+
+    setFormState({
+      username: '',
+      email: '',
+      password: '',
+    });
+  };
 
   return (
     <section className="container">

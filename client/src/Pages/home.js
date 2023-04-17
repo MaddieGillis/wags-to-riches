@@ -39,34 +39,37 @@ function About() {
   return (
     <>
       <Container id="img-container" style={{ display: 'flex', alignItems: 'center', paddingLeft: '5%' }}>
-        <Card.Img id="big-logo" style={{ width: 310, height: 390, borderRadius: 400 / 3 }} src={logo} />
+        <Card.Img id="big-logo" style={{ width: 500, height: 390, borderRadius: 400 / 3 }} src={logo} />
         <Card.Body>
-          <Card.Text style={{ display: 'flex', alignItems: 'center', padding: '8%' }} id="logo-text">
-            Ready to meet your new best friend?
-            Login or Signup to start searching!
+          <Card.Text style={{ display: 'flex', flexDirection: 'column',  alignItems: 'center', padding: '15%' }} id="logo-text">
+            <div>Ready to meet your new best friend?</div>        
+            <div>Login or Signup to start searching!</div>
           </Card.Text>
         </Card.Body>
       </Container>
   
-      <Container id="card-container" style={{ display: 'flex', alignItems: 'center' }}>
-        Hello world!
-        <Card>
+      <Container fluid id="card-container" style={{ display: 'flex', alignItems: 'center' }}>
+        
+        
           {console.log(pets)}
           {/* here below is how the data is mapped onto the page "a" is representing */}
           {loading === true ? 'still loading' : pets.map(a => {
             return (
               <>
-                Hello world!
+              <Card className="m-2 p-4">
                 <Card.Img variant="top" id="card1" src={adopt} />
-                <Card.Body>
-                  <Card.Title style={{ display: 'flex', alignItems: 'center' }}>{a.name} {a.gender} {a.size} {a.type} {a.age}</Card.Title>
-                  <p> {a.status} {a.imagePath}</p>
-                  <Button id="btn">Adopt Me!</Button>
+                <Card.Body id="card-body">
+                  <Card.Title style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{a.name} {a.gender} {a.size} {a.type} {a.age} <p> {a.status} {a.imagePath}</p>
+                  <Button id="btn" className="mt-3">Adopt Me!</Button>
+                  </Card.Title>
+                  
+                
                 </Card.Body>
+                </Card>
               </>
             );
           })}
-        </Card>
+        
       </Container>
     </>
   );
