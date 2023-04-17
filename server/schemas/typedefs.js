@@ -52,6 +52,7 @@ const typeDefs = `#graphql
   type Mutation {
     addPet(input: NewPetInput!): Pet!
     signup(avatar: String!, username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
   }
 `;
 
