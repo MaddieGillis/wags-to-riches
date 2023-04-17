@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
+import { useMutation } from "@apollo/client";
+import { ADD_USER } from "../graphql/mutations";
+import Auth from '../utils/Auth';
 
 function Signup() {
   const [formState, setFormState] = useState({
@@ -13,6 +16,8 @@ function Signup() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const { name, email, username, password, passwordConfirmation } = formState;
+
+  const [addUser, { error, data }] = useMutation(ADD_USER);
 
   function handleChange(e) {
     if (e.target.name === "email") {
@@ -36,14 +41,52 @@ function Signup() {
     }
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    //send data to the backend
-    fetch("http://localhost:3003/signup", { body: JSON.stringify(formState), method: "POST", headers: { "Content-type": "application/json" } })
-      .then((res) => res.json())
-      .then(console.log)
-      .catch(console.error);
-  }
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   //send data to the backend
+  //   fetch("http://localhost:3003/signup", { body: JSON.stringify(formState), method: "POST", headers: { "Content-type": "application/json" } })
+  //     .then((res) => res.json())
+  //     .then(console.log)
+  //     .catch(console.error);
+  // }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    // check if form has everything (as per react-bootstrap docs)
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    try {
+      const { data } = await addUser({
+        variables: { ...formState }
+      });
+
+      Auth.login(data.addUser.token);
+
+      // const response = await createUser(userFormData);
+
+      // if (!response.ok) {
+      //   throw new Error('something went wrong!');
+      // }
+
+      // const { token, user } = await response.json();
+      // console.log(user);
+      // Auth.login(token);
+    } catch (err) {
+      console.error(err);
+      //setShowAlert(true);
+    }
+
+    setFormState({
+      username: '',
+      email: '',
+      password: '',
+    });
+  };
 
   return (
     <section className="container">

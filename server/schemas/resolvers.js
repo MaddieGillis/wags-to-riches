@@ -73,27 +73,51 @@ const resolvers = {
       }
     },
 
-    signup: async (parent, args) => {
-      try {
-        const user = await User.create(args);
-        const token = jwt.sign(
-          {
-            email: user.email,
-            id: user._id,
-          },
-          secret,
-          { expiresIn: "2h" }
-        );
-        return {
-          token,
-          user
-        }
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
+  
+      if (!user) {
+        throw new AuthenticationError('User not found');
       }
-      catch (error) {
-        console.error(error);
+  
+      const correctPw = await user.isCorrectPassword(password);
+  
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect password')
+      }
+  
+      const token = signToken(user);
+      return { token, user };
+  
+    },
 
-      }
-    }
+    // signup: async (parent, args) => {
+    //   try {
+    //     const user = await User.create(args);
+    //     const token = jwt.sign(
+    //       {
+    //         email: user.email,
+    //         id: user._id,
+    //       },
+    //       secret,
+    //       { expiresIn: "2h" }
+    //     );
+    //     return {
+    //       token,
+    //       user
+    //     }
+    //   }
+    //   catch (error) {
+    //     console.error(error);
+
+    //   }
+    // }
+
+    addUser: async (parent, args) => {
+      const user = await User.create(args);
+      const token = signToken(user);
+      return { token, user };
+    },
     
   },
 };
