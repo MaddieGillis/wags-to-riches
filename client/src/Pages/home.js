@@ -5,6 +5,7 @@ import logo from '../assets/images/dog-crown-logo.png';
 import {GET_PETS} from '../graphql/queries';
 import {useQuery} from '@apollo/client';
 
+
 function About() {
 
 
@@ -44,14 +45,15 @@ function About() {
       <Card.Body>
         <Card.Text style={{  display: 'flex', alignItems: 'center', padding: '8%' }}id="logo-text">
           <h1>Ready to meet your new best friend? </h1>
-          <h2>Login or Signup to start searching pets!</h2>
+          <h2>Login or Signup to start searching!</h2>
+          
         </Card.Text>
       </Card.Body>
       </Container>
 
 
    <Container id="card-container" style={{  display: 'flex', alignItem: 'center' }}>
-    Hello world!
+  
     <Card style={{ width: '18rem', height: '18rem' }}>
  
       
@@ -61,12 +63,13 @@ function About() {
     {loading===true?"still loading":pets.map(a => {
 
     return  <>
+  
    
-   Hello world!
+
     <Card.Img variant="top" id="card1" src={adopt} />
       <Card.Body>
         <Card.Title>{a.name} {a.gender} {a.size} {a.type} {a.age}</Card.Title>
-        <p> {a.status} {a.url}</p>
+        <p> {a.status} {a.imagePath}</p>
         <Button id="btn">Adopt Me!</Button>
       </Card.Body>
  
@@ -78,6 +81,7 @@ function About() {
 
     </Card>
     </Container>
+
 
     </>
   
