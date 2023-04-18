@@ -5,6 +5,7 @@ import logo from '../assets/images/dog-crown-logo.png';
 import {GET_PETS} from '../graphql/queries';
 import {useQuery} from '@apollo/client';
 
+
 function About() {
 
 
@@ -42,8 +43,8 @@ function About() {
         <Card.Img id="big-logo" style={{ width: 500, height: 390, borderRadius: 400 / 3 }} src={logo} />
         <Card.Body>
           <Card.Text style={{ display: 'flex', flexDirection: 'column',  alignItems: 'center', padding: '15%' }} id="logo-text">
-            <div>Ready to meet your new best friend?</div>        
-            <div>Login or Signup to start searching!</div>
+            <div id="ready">Ready to meet your new best friend?</div>        
+            <div id="start">Login or Signup to start searching!</div>
           </Card.Text>
         </Card.Body>
       </Container>
@@ -71,9 +72,11 @@ function About() {
           })}
         
       </Container>
+    
     </>
+    
   );
-  
+ 
   
 }
 
