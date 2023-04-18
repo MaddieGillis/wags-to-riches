@@ -8,6 +8,7 @@ const secret = "secrets goes here"
 const bcrypt = require("bcrypt");
 
 
+
 /** @type {ApolloServerOptionsWithTypedefs} */
 const resolvers = {
   Query: {
@@ -100,6 +101,27 @@ const resolvers = {
       return { token, user };
   
     },
+
+  //   signup: async (parent, { email, password }) => {
+  //     try {
+  //       const user = await User.create({ email, password });
+  //       const token = jwt.sign(
+  //         {
+  //           email: user.email,
+  //           id: user._id,
+  //         },
+  //         secret,
+  //         { expiresIn: "2h" }
+  //       );
+  //       return {
+  //         token,
+  //         user
+  //       }
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
+  // }
 
     // signup: async (parent, args) => {
     //   try {
