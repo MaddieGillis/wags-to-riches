@@ -23,7 +23,7 @@ mutation login(
     {
         token
         user {
-            _id
+            email
             username
         }
     }
@@ -43,7 +43,6 @@ mutation addUser(
     ) {
         token
         user {
-            _id
             username
             email
         }

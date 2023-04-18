@@ -57,10 +57,10 @@ function About() {
             return (
               <>
               <Card className="m-2 p-4">
-                <Card.Img variant="top" id="card1" src={adopt} />
+                <Card.Img variant="top" id="card1" src={a.image || adopt} />
                 <Card.Body id="card-body">
-                  <Card.Title style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{a.name} {a.gender} {a.size} {a.type} {a.age} <p> {a.status} {a.imagePath}</p>
-                  <Button id="btn" className="mt-3">Adopt Me!</Button>
+                  <Card.Title style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{a.name} {a.sex} {a.size} {a.type} {a.age} <p> {a.status} {a.imagePath}</p>
+                 <a href={a.url}><Button id="btn" className="mt-3">Adopt Me!</Button></a> 
                   </Card.Title>
                   
                 

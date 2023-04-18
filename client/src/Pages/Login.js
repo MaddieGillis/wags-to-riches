@@ -5,13 +5,15 @@ import Auth from "../utils/Auth"
 import { LOGIN_USER } from "../graphql/mutations";
 
 function Login() {
-  const [formState, setFormState] = useState({ emailUsername: "", password: "" });
+  const [formState, setFormState] = useState({ email: "", password: "" });
 
   const [errorMessage, setErrorMessage] = useState("");
 
-  const { emailUsername, password } = formState;
+  const { email, password } = formState;
 
-  const [login, { error }] = useMutation(LOGIN_USER);
+  const [login, { error }] = useMutation(LOGIN_USER, {onCompleted:(data) => {
+    Auth.login(data.login.token);
+  }});
 
   function handleChange(e) {
     if (e.target.name === "email") {
@@ -25,9 +27,7 @@ function Login() {
     } else {
       if (!e.target.value.length) {
         setErrorMessage(`${e.target.name} is required`);
-      } else {
-        setErrorMessage("");
-      }
+      } 
     }
 
     if (!errorMessage) {
@@ -63,21 +63,21 @@ function Login() {
     }
 
     try {
-      const { data } = await login({
+     await login({
         variables: { ...formState }
       });
 
-      Auth.login(data.login.token);
+      
 
     } catch (err) {
       console.error(err);
     }
 
-    setFormState({
-      username: '',
-      email: '',
-      password: '',
-    });
+    // setFormState({
+    //   username: '',
+    //   email: '',
+    //   password: '',
+    // });
   };
 
   return (
@@ -89,7 +89,7 @@ function Login() {
       <form class="justify-content-center" id="contact-form">
         <div class="mt-5">
           <label htmlFor="name">Email:</label>
-          <input class="form-control" type="text" name="emailUsername" defaultValue={emailUsername} onBlur={handleChange} />
+          <input class="form-control" type="text" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         <div class="mt-5">
           <label htmlFor="email">Password</label>

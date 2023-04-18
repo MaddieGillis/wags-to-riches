@@ -1,17 +1,12 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 import { Nav, NavLink, NavMenu, Avatar } from "./NavbarElements";
 
 import logoImage from "../.././assets/images/crown-logo.png";
-
+import Auth from "../../utils/Auth"
 
 const Navbar = () => {
-  const [user, setUser] = useState(() => JSON.parse(localStorage.getItem("store"))?.user);
-  const logout = useCallback(() => {
-    const store = JSON.parse(localStorage.getItem("store"));
-    localStorage.setItem("store", JSON.stringify({ ...store, user: null }));
-    setUser(null);
-  },[]);
-
+ 
+const isloggedin = !!localStorage.getItem("id_token")
   return (
     <>
       <Nav>
@@ -25,21 +20,22 @@ const Navbar = () => {
           <NavLink to="/favedogs" activeStyle>
             Saved Dogs
           </NavLink>
-          <NavLink to="/signup" activeStyle>
+          
+          {!isloggedin  ? (
+         <> <NavLink to="/signup" activeStyle>
             Sign Up!
           </NavLink>
-          {!user ? (
             <NavLink to="/login" activeStyle>
               Log In!
-            </NavLink>
+            </NavLink> </>
           ) : (
-            <NavLink onClick={() => logout()}>Logout</NavLink>
+            <NavLink onClick={() => Auth.logout()}>Logout</NavLink>
           )}
           <NavLink to="/donate" activeStyle>
             Donate!
           </NavLink>
-          {user && (
-            <NavLink to="/donate" activeStyle title={user?.email}>
+          {isloggedin && (
+            <NavLink to="/donate" activeStyle title={"logged In"}>
               Account
             </NavLink>
           )}

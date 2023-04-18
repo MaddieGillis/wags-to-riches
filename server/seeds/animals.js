@@ -17,7 +17,7 @@ module.exports = {
       age: "7 Months",
       gender: "Male",
       size: "Medium",
-      coat: null,
+      coat: null, 
       attributes: {
         spayed_neutered: false,
         house_trained: false,
@@ -32,7 +32,7 @@ module.exports = {
       organization_animal_id: "LACA-A-8411",
       photos: [
         {
-          full: "../client/src/assets/images/Lamont.jpeg",
+          full: "http://localhost:3003/images/Lamont.jpeg",
         }
       ],
       primary_photo_cropped: null,
@@ -94,7 +94,7 @@ module.exports = {
       organization_animal_id: "LACA-A-8444",
       photos: [
         {
-          full: "../client/src/assets/images/Taki.jpeg",
+          full: "http://localhost:3003/images/Taki.jpeg",
         }
       ],
       primary_photo_cropped: null,
@@ -156,7 +156,7 @@ module.exports = {
       organization_animal_id: "KKFS-A-8070",
       photos: [
         {
-          full: "../client/src/assets/images/PrestonWiggleston.jpg",
+          full: "http://localhost:3003/images/PrestonWiggleston.jpg",
         }
       ],
       primary_photo_cropped: null,
@@ -218,7 +218,7 @@ module.exports = {
       organization_animal_id: "PAAR-A-1538",
       photos: [
         {
-          full:"../client/src/assets/images/Ginger.jpeg",
+          full:"http://localhost:3003/images/Ginger.jpeg",
         }
       ],
       primary_photo_cropped: null,
@@ -281,7 +281,7 @@ module.exports = {
       organization_animal_id: "TUL-A-4698",
       photos: [
         {
-          full: "../client/src/assets/images/Gunther.jpeg",
+          full: "http://localhost:3003/images/Gunther.jpeg",
         }
       ],
       primary_photo_cropped: null,
@@ -340,7 +340,7 @@ module.exports = {
       organization_animal_id: "FPA-A-1552",
       photos: [
         {
-          full:"../client/src/assets/images/King.jpg",
+          full:"http://localhost:3003/images/King.jpg",
         }
       ],
       primary_photo_cropped: null,
@@ -399,7 +399,7 @@ module.exports = {
       organization_animal_id: "FPA-A-1548",
       photos: [
         {
-          full: "../client/src/assets/images/DanielButterCupJr.jpeg",
+          full: "http://localhost:3003/images/DanielButterCupJr.jpeg",
         }
       ],
       primary_photo_cropped: null,
@@ -458,7 +458,7 @@ module.exports = {
       organization_animal_id: "FPA-A-1553",
       photos: [
         {
-          full:"../client/src/assets/images/Rueben.jpg",
+          full:"http://localhost:3003/images/Rueben.jpg",
         }
       ],
       primary_photo_cropped: null,
@@ -576,7 +576,7 @@ module.exports = {
       organization_animal_id: "FPA-A-1550",
       photos: [
         {
-          full: "../client/src/assets/images/SirMaximusPrime.jpeg",
+          full: "http://localhost:3003/images/SirMaximusPrime.jpeg",
         }
       ],
       primary_photo_cropped: null,
@@ -635,7 +635,7 @@ module.exports = {
       organization_animal_id: "FPA-A-1549",
       photos: [
         {
-          full: "../client/src/assets/images/Filo.png",
+          full: "http://localhost:3003/images/Filo.png",
         }
       ],
       primary_photo_cropped: null,
@@ -698,7 +698,7 @@ module.exports = {
       organization_animal_id: null,
       photos: [
         {
-          full: "../client/src/assets/images/Artemis.jpg",
+          full: "http://localhost:3003/images/Artemis.jpg",
         },
       ],
       videos: [],
@@ -751,7 +751,7 @@ module.exports = {
       organization_animal_id: null,
       photos: [
         {
-          full: "../client/src/assets/images/Dutch.jpg"
+          full: "http://localhost:3003/images/Dutch.jpg"
         },
       ],
       videos: [],
@@ -808,7 +808,7 @@ module.exports = {
         "Budweiser is a handsome black lab mix. He was turned in by no fault of his own to our shelter....",
       organization_animal_id: "19183502-2023-26835K",
       photos: [{
-        full:"../client/src/assets/images/Peppermint.jpg"
+        full:"http://localhost:3003/images/Peppermint.jpg"
       }],
       primary_photo_cropped: null,
       videos: [],
@@ -866,7 +866,7 @@ module.exports = {
       organization_animal_id: "165841",
       photos: [
         {
-        full: "../client/src/assets/images/Bailey.jpg"
+        full: "http://localhost:3003/images/Bailey.jpg"
         }
      ],
       primary_photo_cropped: null,
@@ -925,7 +925,7 @@ module.exports = {
       organization_animal_id: "168736",
       photos: [
         {
-          full: "../client/src/assets/images/Gaston.jpg"
+          full: "http://localhost:3003/images/Gaston.jpg"
         }
       ],
       primary_photo_cropped: null,
@@ -984,7 +984,7 @@ module.exports = {
       organization_animal_id: "168755",
       photos: [
         {
-          full: "../client/src/assets/images/MrsBrisby.jpg"
+          full: "http://localhost:3003/images/MrsBrisby.jpg"
         }
       ],
       primary_photo_cropped: null,
@@ -1042,7 +1042,7 @@ module.exports = {
       organization_animal_id: null,
       photos: [
         {
-          full: "../client/src/assets/images/ScratTheSquirrel.jpg"
+          full: "http://localhost:3003/images/ScratTheSquirrel.jpg"
         }
       ],
       primary_photo_cropped: null,
@@ -1108,7 +1108,7 @@ module.exports = {
       organization_animal_id: null,
       photos: [
         {
-          full: "../client/src/assets/images/Grandpa.jpg",
+          full: "http://localhost:3003/images/Grandpa.jpg",
         },
       ],
       primary_photo_cropped: {
@@ -1181,7 +1181,7 @@ module.exports = {
       organization_animal_id: null,
       photos: [
         {
-          full: "../client/src/assets/images/MarlonBrando.jpeg",
+          full: "http://localhost:3003/images/MarlonBrando.jpeg",
         },
       ],
       primary_photo_cropped: {
