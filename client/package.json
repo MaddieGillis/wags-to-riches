@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MaddieGillis.github.io/my-wags-to-riches",
+  "homepage": "./",
   "proxy": "http://localhost:3003/",
 
   "dependencies": {
