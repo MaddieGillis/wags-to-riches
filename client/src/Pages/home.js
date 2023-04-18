@@ -5,6 +5,7 @@ import logo from '../assets/images/dog-crown-logo.png';
 import {GET_PETS} from '../graphql/queries';
 import {useQuery} from '@apollo/client';
 
+
 function About() {
 
 
@@ -42,8 +43,8 @@ function About() {
         <Card.Img id="big-logo" style={{ width: 500, height: 390, borderRadius: 400 / 3 }} src={logo} />
         <Card.Body>
           <Card.Text style={{ display: 'flex', flexDirection: 'column',  alignItems: 'center', padding: '15%' }} id="logo-text">
-            <div>Ready to meet your new best friend?</div>        
-            <div>Login or Signup to start searching!</div>
+            <div id="ready">Ready to meet your new best friend?</div>        
+            <div id="start">Login or Signup to start searching!</div>
           </Card.Text>
         </Card.Body>
       </Container>
@@ -57,10 +58,10 @@ function About() {
             return (
               <>
               <Card className="m-2 p-4">
-                <Card.Img variant="top" id="card1" src={adopt} />
+                <Card.Img variant="top" id="card1" src={a.image || adopt} />
                 <Card.Body id="card-body">
-                  <Card.Title style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{a.name} {a.gender} {a.size} {a.type} {a.age} <p> {a.status} {a.imagePath}</p>
-                  <Button id="btn" className="mt-3">Adopt Me!</Button>
+                  <Card.Title style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{a.name} {a.sex} {a.size} {a.type} {a.age} <p> {a.status} {a.imagePath}</p>
+                 <a href={a.url}><Button id="btn" className="mt-3">Adopt Me!</Button></a> 
                   </Card.Title>
                   
                 
@@ -71,9 +72,11 @@ function About() {
           })}
         
       </Container>
+    
     </>
+    
   );
-  
+ 
   
 }
 

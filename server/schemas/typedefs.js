@@ -26,6 +26,8 @@ const typeDefs = `#graphql
     age:String
     sex:String
     breed:String
+    image:String
+    url:String
   }
 
   # The "Query" type is special: it lists all of the available queries that

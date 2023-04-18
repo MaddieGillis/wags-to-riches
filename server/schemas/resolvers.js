@@ -1,10 +1,13 @@
 // Resolvers define how to fetch the types defined in your schema.
 // This resolver retrieves books from the "books" array above.
-
+const { signToken} = require("../utils/auth")
 const { Pet, User } = require("../models");
 const jwt = require("jsonwebtoken");
 // const secret = process.env.JWT_SECRET;
 const secret = "secrets goes here"
+const bcrypt = require("bcrypt");
+
+
 
 /** @type {ApolloServerOptionsWithTypedefs} */
 const resolvers = {
@@ -24,6 +27,9 @@ const resolvers = {
           name: pet.name,
           age: pet.age,
           breed: pet.breed,
+          image: pet.image,
+          sex: pet.gender,
+          url: pet.url,
         }));
       } catch (error) {
         console.log(error);
@@ -47,6 +53,7 @@ const resolvers = {
           age: pet.age,
           breed: pet.breed,
           ownerEmail: pet.ownerEmail,
+          image: pet.image,
         };
       } catch (error) {
         console.log(error);
@@ -77,19 +84,44 @@ const resolvers = {
       const user = await User.findOne({ email });
   
       if (!user) {
-        throw new AuthenticationError('User not found');
+        throw new Error('User not found');
       }
   
-      const correctPw = await user.isCorrectPassword(password);
+      const { password: hashedPassword } = user;
+      const IsCorrectPassword = await bcrypt
+        .compare(password, hashedPassword)
+        .catch(console.error);
   
-      if (!correctPw) {
-        throw new AuthenticationError('Incorrect password')
+      if (!IsCorrectPassword) {
+        throw new Error('Incorrect password')
       }
+  
   
       const token = signToken(user);
       return { token, user };
   
     },
+
+  //   signup: async (parent, { email, password }) => {
+  //     try {
+  //       const user = await User.create({ email, password });
+  //       const token = jwt.sign(
+  //         {
+  //           email: user.email,
+  //           id: user._id,
+  //         },
+  //         secret,
+  //         { expiresIn: "2h" }
+  //       );
+  //       return {
+  //         token,
+  //         user
+  //       }
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
+  // }
 
     // signup: async (parent, args) => {
     //   try {
@@ -114,6 +146,7 @@ const resolvers = {
     // }
 
     addUser: async (parent, args) => {
+      console.log(args)
       const user = await User.create(args);
       const token = signToken(user);
       return { token, user };

@@ -20,8 +20,10 @@ async function seedUsers() {
 
 async function seedPets() {
   await Pet.deleteMany({});
-
-  await Pet.insertMany(petsData);
+  const petsDataWithImage = petsData.map(pet => {
+    return {...pet, image: pet.photos[0].full}
+  })
+  await Pet.insertMany(petsDataWithImage);
 
   console.log("Pets seeded!");
 }

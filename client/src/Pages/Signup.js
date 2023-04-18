@@ -17,7 +17,9 @@ function Signup() {
 
   const { name, email, username, password, passwordConfirmation } = formState;
 
-  const [addUser, { error, data }] = useMutation(ADD_USER);
+  const [addUser, { error, data }] = useMutation(ADD_USER, {onCompleted: (data)=>{
+    Auth.login(data.addUser.token);
+  } });
 
   function handleChange(e) {
     if (e.target.name === "email") {
@@ -61,11 +63,12 @@ function Signup() {
     }
 
     try {
-      const { data } = await addUser({
+      console.log(formState)
+       await addUser({
         variables: { ...formState }
       });
 
-      Auth.login(data.addUser.token);
+      
 
       // const response = await createUser(userFormData);
 
