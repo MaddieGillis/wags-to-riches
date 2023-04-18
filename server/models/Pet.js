@@ -18,13 +18,19 @@ const dogSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    sex: {
+    gender: {
         type: String,
-        deafault: 'male'
+        default: 'male'
     },
     breed:{
         type: String,
         default: 'Breed not Specified.'
+    },
+    image:{
+        type: String,
+    },
+    url: {
+        type: String,
     }
 },
 
