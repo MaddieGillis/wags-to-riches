@@ -6,7 +6,7 @@ import Auth from '../utils/Auth';
 
 function Signup() {
   const [formState, setFormState] = useState({
-    name: "",
+    username: "",
     email: "",
     message: "",
     password: "",
@@ -15,7 +15,7 @@ function Signup() {
 
   const [errorMessage, setErrorMessage] = useState("");
 
-  const { name, email, username, password, passwordConfirmation } = formState;
+  const { email, username, password, passwordConfirmation } = formState;
 
   const [addUser, { error, data }] = useMutation(ADD_USER, {onCompleted: (data)=>{
     Auth.login(data.addUser.token);
@@ -84,11 +84,11 @@ function Signup() {
       //setShowAlert(true);
     }
 
-    setFormState({
-      username: '',
-      email: '',
-      password: '',
-    });
+    // setFormState({
+    //   username: '',
+    //   email: '',
+    //   password: '',
+    // });
   };
 
   return (
@@ -98,24 +98,24 @@ function Signup() {
       </h2>
       <hr></hr>
       <form class="justify-content-center" id="contact-form">
-        <div class="mt-5">
-          <label htmlFor="name">Name:</label>
-          <input class="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
+        {/* <div class="mt-5"> */}
+          {/* <label htmlFor="name">Name:</label>
+          <input class="form-control" type="text" name="name" defaultValue={username} onBlur={handleChange} />
+        </div> */}
         <div class="mt-5">
           <label htmlFor="email">Email Address:</label>
           <input class="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         <div class="mt-5">
-          <label htmlFor="email">Username:</label>
-          <input class="form-control" type="username" name="username" defaultValue={username} onBlur={handleChange} />
+          <label htmlFor="username">Username:</label>
+          <input class="form-control" type="text" name="username" defaultValue={username} onBlur={handleChange} />
         </div>
         <div class="mt-5">
-          <label htmlFor="email">Password :</label>
+          <label htmlFor="password">Password :</label>
           <input class="form-control" type="password" name="password" defaultValue={password} onBlur={handleChange} />
         </div>
         <div class="mt-5">
-          <label htmlFor="email">Password Confirmation:</label>
+          <label htmlFor="passwordConfirmation">Password Confirmation:</label>
           <input class="form-control" type="password" name="passwordConfirmation" defaultValue={passwordConfirmation} onBlur={handleChange} />
         </div>
         {errorMessage && (
