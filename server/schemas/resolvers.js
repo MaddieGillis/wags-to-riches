@@ -1,6 +1,6 @@
 // Resolvers define how to fetch the types defined in your schema.
 // This resolver retrieves books from the "books" array above.
-const { signToken} = require("../utils/auth")
+const { signToken } = require("../utils/auth")
 const { Pet, User } = require("../models");
 const jwt = require("jsonwebtoken");
 // const secret = process.env.JWT_SECRET;
