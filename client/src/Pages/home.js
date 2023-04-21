@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Button, Container } from 'react-bootstrap';
 import adopt from '../assets/images/whitedog-adopt.jpg';
-import logo from '../assets/images/dog-crown-logo.png';
+import logo from '../assets/images/wagstoriches3.png';
 import {GET_PETS} from '../graphql/queries';
 import {useQuery} from '@apollo/client';
 
