@@ -6,7 +6,7 @@ import styled from "styled-components";
 
   
 export const Nav = styled.nav`
-  background: #0A9396;
+  background: #5B96A9;
   height: 65px;
   display: flex;
   justify-content: space-between;
@@ -17,8 +17,8 @@ export const Nav = styled.nav`
 `;
 
 export const Avatar = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 85px;
+  height: 60px;
   margin-right: auto;
 `;
   
@@ -27,14 +27,14 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: 'Atma', cursive;
-  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
   text-transform: uppercase;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #e9c46a;
+    color: #FFFCF6;
   }
 `;
   

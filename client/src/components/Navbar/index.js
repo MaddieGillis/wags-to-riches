@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, NavLink, NavMenu, Avatar } from "./NavbarElements";
 
-import logoImage from "../.././assets/images/crown-logo.png";
+import logoImage from "../.././assets/images/wagstoriches3.png";
 import Auth from "../../utils/Auth"
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
 const isloggedin = !!localStorage.getItem("id_token")
   return (
     <>
-      <Nav>
+      <Nav style={{ display: 'flex'}}>
       <NavLink to="/home" activeStyle>
       <Avatar id="navbar-logo" src={logoImage} alt="wags to riches logo" />
       </NavLink>
